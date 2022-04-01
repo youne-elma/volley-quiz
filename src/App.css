@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+:root{
+    --color-blop1: #C4EABE;
+    --color-blop2: #D4D8E7;
+    --color-title: #293264;
+    --color-button: #4D5B9E;
+    --color-button-hover: #1C2655;
+    --color-text: #293264;
+    --answer-click: #D4D8E7;
+    --answer-correct: #94D7A2;
+    --answer-wrong: #F7D9DB;
+}
+
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F5F7FB;
+}
+.main-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.title-quiz{
+    color: var(--color-title);
+    font-size: 40px;
+}
+.parag-quiz{
+    text-align: center;
+    font-size: 20px;
+}
+.start-button{
+    padding: 5% 15%;
+    color: white;
+    font-size: 18px;
+    border-style: none;
+    border-radius: 40px;
+    background-color: var(--color-button);
+}
+.start-button:hover{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--color-button-hover);
+}
+
+
+/*-----------------------------SVG STYLING----------------------------------*/
+
+.blop1{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.blop2{
+    position: absolute;
+    left: 0;
+    top: 11%;
+}
+.spike-image{
+    position: absolute;
+    height: 180px;
+    transform: rotate(20deg);
+    bottom: 18%;
+    right: 12%;
+}
+.volleyball-icon{
+    position: absolute;
+    height: 100px;
+    bottom: 12%;
+    left: 11%;
+}
+@media screen and (max-width: 550px){
+    .blop1{
+        height: 10%;
+    }
+    .blop2{
+        height: 25%;
+    }
+    .spike-image{
+        right: 5%;
+        bottom: 12%;
+        height: 20%;
+    }
+    .volleyball-icon{
+        bottom: 2%;
+        height: 8%;
+    }
+}
