@@ -24,6 +24,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
     background-color: #F5F7FB;
 }
 .main-text{
@@ -32,6 +33,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    z-index: 10;
 }
 .title-quiz{
     color: var(--color-title);
@@ -48,6 +50,21 @@
     border-style: none;
     border-radius: 40px;
     background-color: var(--color-button);
+    text-decoration: none;
+    transition: all .5s ease;
+}
+.error-button{
+    padding: 5% 15%;
+    border-radius: 40px;
+    text-decoration: none;
+    color: white;
+    background-color: var(--color-button);
+}
+
+.error-button:hover{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--color-button-hover);
 }
 .start-button:hover{
     cursor: pointer;
@@ -57,7 +74,18 @@
 
 
 /*-----------------------------SVG STYLING----------------------------------*/
-
+.gifBlop1{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+.gifBlop2{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+}
 .blop1{
     position: absolute;
     right: 0;
@@ -72,16 +100,22 @@
     position: absolute;
     height: 180px;
     transform: rotate(20deg);
-    bottom: 18%;
+    bottom: 10z%;
     right: 12%;
 }
 .volleyball-icon{
     position: absolute;
     height: 100px;
-    bottom: 12%;
+    bottom: 10%;
     left: 11%;
 }
 @media screen and (max-width: 550px){
+    .gifBlop1{
+        height: 32%;
+    }
+    .gifBlop2{
+        height: 32%;
+    }
     .blop1{
         height: 10%;
     }
@@ -90,11 +124,11 @@
     }
     .spike-image{
         right: 5%;
-        bottom: 12%;
+        bottom: 3%;
         height: 20%;
     }
     .volleyball-icon{
-        bottom: 2%;
+        bottom: 15%;
         height: 8%;
     }
 }

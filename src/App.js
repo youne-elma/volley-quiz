@@ -1,11 +1,20 @@
 import React from 'react';
-import StartGame from './components/StartGame';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+
+// import components
+import StartGame from './pages/StartGame';
+import Game from './pages/Game';
+import Error from './pages/Error';
 
 function App() {
   return (
-    <>
-      <StartGame />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" exact element={<StartGame />} />
+        <Route path="/game" element={<Game />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </Router>
   );
 }
 
