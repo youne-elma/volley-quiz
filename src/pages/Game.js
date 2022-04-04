@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import Loading from '../components/Loading'
+import Question from '../components/Question'
 
 // import PNGS
 import blop3 from '../images/blop3.png'
@@ -12,7 +13,7 @@ const Game = () => {
   const [loading,setLoading] = useState(false);
   const [questions,setQuestions] = useState([]);
 
-  const url = 'https://opentdb.com/api.php?amount=10';
+  const url = 'https://opentdb.com/api.php?amount=5';
                   // -----------------------OPTION1-------------
                   // let displayData
                   // function pullJson() {
@@ -63,16 +64,17 @@ const Game = () => {
         <img className="blop3" src={blop3} alt="pictureBlop"/>
         <div className="questions">
           {loading && <Loading />}
-          {questions.map(item => {
+          {/* {questions.map(item => {
             return(
               <h1>
                 {item.difficulty}
               </h1>
             )
-          })}
+          })} */}
+          <Question />
         </div>
         <div className="result">
-          {/* <p>Your result is 3/5 Nice one!</p> */}
+          <p>Your result is 3/5 Nice one!</p>
           <button className="checkAnswer">Check the answers</button>
         </div>
         <img className="blop4" src={blop4} alt="pictureBlop" />
