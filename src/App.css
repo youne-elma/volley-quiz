@@ -96,11 +96,21 @@
     left: 0;
     top: 11%;
 }
+.blop3{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.blop4{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
 .spike-image{
     position: absolute;
     height: 180px;
     transform: rotate(20deg);
-    bottom: 10z%;
+    bottom: 10%;
     right: 12%;
 }
 .volleyball-icon{
@@ -122,6 +132,12 @@
     .blop2{
         height: 25%;
     }
+    .blop3{
+        height: 20%;
+    }
+    .blop4{
+        height: 10%;
+    }
     .spike-image{
         right: 5%;
         bottom: 3%;
@@ -131,4 +147,23 @@
         bottom: 15%;
         height: 8%;
     }
+}
+
+
+
+
+/*-----------------------------Game page----------------------------------*/
+
+.questions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0px 60px;
+    gap:20px;
+}
+.result{
+    display: flex;
+    gap: 40px;
+    border: 1px solid blue;
 }
