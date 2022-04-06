@@ -14,7 +14,7 @@ const StartGame = () => {
     //   from={{opacity: 0}}
     //   to={{opacity: 1}}
     // >
-      <div className="main">
+      <div className="main start-game">
           <img className="blop1" src={blop1} alt="blop1"/>
           <img className="blop2" src={blop2} alt="blop2"/>
           <div className="main-text">

@@ -6,7 +6,9 @@ import StartGame from './pages/StartGame';
 import Game from './pages/Game';
 import Error from './pages/Error';
 
+
 function App() {
+
   return (
     <Router>
       <Routes>
