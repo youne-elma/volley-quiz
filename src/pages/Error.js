@@ -8,7 +8,7 @@ import gifblop2 from '../images/gifblop2.gif'
 
 const Error = () => {
   return (
-    <div className="main">
+    <div className="main start-game">
       <img src={gifblop1} className="gifBlop1" alt="gif blop 1"/>
       <div className="main-text">
         <h1 className="title-quiz">Error 404 page</h1>

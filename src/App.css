@@ -220,7 +220,7 @@ html {
     align-items: center;
     gap: 1em;
 }
-.answers > p{
+.answers-btn{
     font-size: 15px;
     outline: none;
     font-weight: bold;
@@ -233,13 +233,33 @@ html {
     user-select: none;
     transition: all .5s ease;
 }
-.answers > p:hover{
+.answers-btn:hover{
     border: 2px solid #D4D8E7;
     background-color: #D4D8E7;
 }
 .answers > .active{
     border: 2px solid #D4D8E7;
     background-color: #D4D8E7;
+}
+.blue{
+    border: 2px solid #D4D8E7;
+    background-color: #D4D8E7;
+}
+.faded{
+    opacity: 0.5;
+}
+.green{
+    border: 2px solid #94D7A2;
+    background-color: #94D7A2;
+    opacity: 1;
+}
+.red{
+    opacity: 0.5;
+}
+
+.playAgain{
+    color: white;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 700px) {
@@ -256,7 +276,7 @@ html {
     .answers{
         gap: 1em;
     }
-    .answers > p {
+    .answers-btn {
         font-size: 14px;
         padding: .5rem;
     }
@@ -277,7 +297,7 @@ html {
     .answers{
         gap: .8em;
     }
-    .answers > p{
+    .answers-btn{
         padding: .3rem;
     }
 }
