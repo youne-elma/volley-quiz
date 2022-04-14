@@ -20,7 +20,8 @@ This is a complete Quiz game, fully optimized for _desktop_ and _mobile_, with a
 ## Demo
 
 Here is the working live Demo: [https://youne-elma.github.io/volley-quiz/]
-Here is the Figma Design i did by myself: [https://www.figma.com/file/riVamF10d4X1GUIAZlvjEJ/Volleyball-quiz?node-id=0%3A1]
+
+And here is the Figma Design i did by myself: [https://www.figma.com/file/riVamF10d4X1GUIAZlvjEJ/Volleyball-quiz?node-id=0%3A1]
 
 ## Technologies
 
