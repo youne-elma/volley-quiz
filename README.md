@@ -21,6 +21,8 @@ This is a complete Quiz game, fully optimized for _desktop_ and _mobile_, with a
 
 Here is the working live Demo: [https://youne-elma.github.io/volley-quiz/]
 
+And here is the Figma Design i did by myself: [https://www.figma.com/file/riVamF10d4X1GUIAZlvjEJ/Volleyball-quiz?node-id=0%3A1]
+
 ## Technologies
 
 - React components, ES6
