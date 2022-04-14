@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/volley-quiz/static/css/main.ae0ab2a6.css",
+    "main.js": "/volley-quiz/static/js/main.5969e010.js",
+    "static/media/loadingGif.gif": "/volley-quiz/static/media/loadingGif.87138ed35212524a1006.gif",
+    "static/media/gifblop2.gif": "/volley-quiz/static/media/gifblop2.7169a19b2a7618f58264.gif",
+    "static/media/gifblop1.gif": "/volley-quiz/static/media/gifblop1.27f451aad88691046d93.gif",
+    "index.html": "/volley-quiz/index.html",
+    "main.ae0ab2a6.css.map": "/volley-quiz/static/css/main.ae0ab2a6.css.map",
+    "main.5969e010.js.map": "/volley-quiz/static/js/main.5969e010.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae0ab2a6.css",
+    "static/js/main.5969e010.js"
+  ]
+}
