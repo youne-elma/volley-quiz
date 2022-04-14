@@ -12,9 +12,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" exact element={<StartGame />} />
-        <Route path="/game" element={<Game />} />
-        <Route path="*" element={<Error />} />
+        <Route path="/volley-quiz/" exact element={<StartGame />} />
+        <Route path="/volley-quiz/game" element={<Game />} />
+        <Route path="/volley-quiz/*" element={<Error />} />
       </Routes>
     </Router>
   );

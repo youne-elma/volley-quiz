@@ -151,7 +151,7 @@ const Game = () => {
             }
             {answered && <>
               <p>You scored {count}/5 correct answers</p>
-              <button className="checkAnswer"><Link to="/" className="playAgain">Play Again</Link></button> 
+              <button className="checkAnswer"><Link to="/volley-quiz/" className="playAgain">Play Again</Link></button> 
             </>
             }
           </div>

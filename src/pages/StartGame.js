@@ -20,7 +20,7 @@ const StartGame = () => {
           <div className="main-text">
               <h1 className="title-quiz">Volleyball Quiz</h1>
               <p className="parag-quiz">a quiz about volleyball,<br /> hurry up and start the quiz</p>
-              <Link to="/game" className="start-button">start the quiz</Link>
+              <Link to="/volley-quiz/game" className="start-button">start the quiz</Link>
           </div>
           <img className="spike-image" src={spikeImage} alt="spike volleyball"/>
           <img className="volleyball-icon" src={volleyballIcon} alt="volleyball ball"/>
