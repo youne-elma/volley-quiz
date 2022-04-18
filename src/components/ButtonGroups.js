@@ -1,35 +1,34 @@
-import React from 'react'
+function ButtonGroups(props) {
+  const [id, setButtonGroup, buttonGroup, setChoices, choices] = props;
+  const [active, answered, isCorrect, fixedAnswers, index] = props;
 
-const ButtonGroups = (props) => {
-    const [active, answered, isCorrect, fixedAnswers, index, id] = [props.active, props.answered, props.isCorrect, props.fixedAnswers, props.index, props.id];
+  const clickHandler = () => {
+    buttonGroup.splice(index, 1, id);
+    setButtonGroup(buttonGroup);
 
-    const clickHandler = () => {
-        const buttonGroup = [...props.buttonGroup];
-        buttonGroup.splice(index, 1, id);
-        props.setButtonGroup(buttonGroup);
+    const newChoices = choices;
+    newChoices.splice(index, 1, fixedAnswers);
 
-        const newChoices = [...props.choices];
-        newChoices.splice(index, 1, fixedAnswers);
-
-        props.setChoices(newChoices);
-    }
+    setChoices(newChoices);
+  };
 
   return (
-    <button 
-        className={`answers-btn 
-        ${active && 'blue'}
-        ${answered && 'faded'}
-        ${active && answered && 'green'}
-        ${answered && isCorrect && 'green'}
-        ${active && answered && !isCorrect && 'red'}
+    <button
+      className={`answers-btn 
+        ${active && "blue"}
+        ${answered && "faded"}
+        ${active && answered && "green"}
+        ${answered && isCorrect && "green"}
+        ${active && answered && !isCorrect && "red"}
         `}
-        onClick={() => clickHandler()}
-        disabled={answered ? true : false}
-        key={id} 
+      type="button"
+      onClick={() => clickHandler()}
+      disabled={!!answered}
+      key={id}
     >
-        {fixedAnswers}
+      {fixedAnswers}
     </button>
-  )
+  );
 }
 
-export default ButtonGroups
+export default ButtonGroups;

@@ -1,14 +1,11 @@
-import React from 'react';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 // import components
-import StartGame from './pages/StartGame';
-import Game from './pages/Game';
-import Error from './pages/Error';
-
+import StartGame from "./pages/StartGame";
+import Game from "./pages/Game";
+import Error from "./pages/Error";
 
 function App() {
-
   return (
     <Router>
       <Routes>
